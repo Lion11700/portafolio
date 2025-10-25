@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+:root {
+    --navbar: #7a4313;
+    --navbar-hover: #8c5e22;
+    --background: rgb(226, 223, 223);
+    --contenido: #e8cb9a;
+    --proyectos-hover: #ece2d1;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    margin:0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #3b1f1f;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos del header*/
+.navbar {
+    background-color: var(--navbar);
+    position: sticky;
+    top: 0;
+}
+
+.navbar-logo {
+    margin: 0 1rem;
+    padding: 0.2rem;
+    margin-left: 3rem;
+    align-items: center;
+}
+
+
+.navbar-logo .logo {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+    margin-right: 3rem;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-contenido {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-contenido:hover {
+    background-color: var(--navbar-hover);
+}
+
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    padding: 1rem; 
+    display: block; 
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.icono {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.icono img {
+    width: 24px;
+    height: 24px;
+}
+
+/*Estilos de Contenido*/
+
+.Contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background-color: var(--contenido);
+}
+
+.YO {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem 10rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.SobreMi {
+    width: 50%;
+}
+
+.SobreMi h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.SobreMi p {
+    text-align: left;
+    max-width: 75%;
+    margin-bottom: 1rem;
+    margin: 0;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Proyectos */
+
+.Proyectos {
+    margin: 3rem auto;
+    width: 60%;
+    height: auto;
+}
+
+.Proyectos h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.Proyectos h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding: 0.2rem;
+}
+
+.Proyectos ul {
+    margin: 1rem 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.Proyectos li {
+    border: 0.1rem solid black;
+    padding: 1rem;
+    background-color: var(--blanco-leve);
+}
+
+.Proyectos li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0.2rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+.Proyectos li a:hover {
+    color: white;
+    background-color: black;
+    
+}
+
+.Proyectos li:hover {
+    background-color: var(--proyectos-hover);
+}
+
+.Proyectos li img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.Proyectos ul h3 {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Estilos del pie de página */
+
+.footer {
+    background-color: var(--footer);
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 1rem;
+    color: black;
+    font-size: 1rem;
+}
+
+/*Contacto*/
+.contacto {
+    padding: 3rem 2rem;
+    background-color: var(--contenido);
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.contacto p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contacto .correo {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.contacto .correo:hover {
+    text-decoration: underline;
+    color: #069dd4;
+}
+
+.contacto .iconos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contacto .icono {
+    width: 30px;
+    height: 30px;
+}
+
+/*Footer*/
+.footer {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 1rem;
+    color: black;
+    font-size: 1rem;
+}
