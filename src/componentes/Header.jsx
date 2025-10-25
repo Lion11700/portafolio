@@ -22,6 +22,7 @@ return(
                 <li className="navbar-contenido">
                     <a href="#contacto" className="nav-item">Contacto</a>
                 </li>
+                <div className="logos-sociales">
                 <li>
                     <a className="icono" href="https://www.linkedin.com/in/alexsanc/" target="_blank">
                         <img src={linkedIn}  alt="Icono de LinkedIn" />
@@ -37,6 +38,7 @@ return(
                         <img src={mail}  alt="Icono de Correo" />
                     </a>
                 </li>
+                </div>
             </ul>
         </div>
     </div>
